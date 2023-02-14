@@ -1,6 +1,6 @@
 body{
-      background-image:url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
-    background-position:top -500px left -500px, bottom -500px right -520px;
+     
+  
     background-repeat: no-repeat;
     background-color: hsl(185,75%,39%) ;
     display: flex;
