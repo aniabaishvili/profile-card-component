@@ -1,5 +1,8 @@
 <html>
    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       <link rel="stylesheet" type="text/css" href="style.css">
       <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
@@ -8,33 +11,17 @@
       <title>Profile Card Component</title>
    </head>
    <body>
-      <div class="bg-top">
-         <img src="./bg-pattern-top.svg">
-      </div>
-      <div class="card">
-         <div class="backPicture">
-         <img src="./bg-pattern-card.svg">
-         </div>
-         <div class="profileImg">
-            <img src="./image-victor.jpg">
-         </div>
-         <div class="cardBody">
-            <h2 class="name">Victor Crest <span class="age">26</span></h2>
-         </div>
-         <div class="city">
-            <p>London</p>
-         </div>
-         <div class="activity">
+    <div class="container">
+        <img src="./bg-pattern-card.svg" alt="background-picture" class="backpicture">
+        <img src="./image-victor.jpg" alt="victor-image" class="profile">
+        <h2 class="name">Victor Crest <span class="age">26</span></h2>
+        <p class="city">London</p>
+        <div class="activity">
             <h4>80K<span class="act">Followers</span></h4>
             <h4>803K<span class="act">Likes</span></h4>
             <h4>1.4K<span class="act">Photos</span></h4>
          </div>
-      </div>
-      <div class="bg-bottom">
-         <img src="./bg-pattern-bottom.svg">
 
-      </div>
-      
-     
+    </div> 
    </body>
 </html>
