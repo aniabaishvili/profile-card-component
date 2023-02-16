@@ -1,17 +1,24 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Kumbh Sans', sans-serif; 
+font-style: normal;
+}
+
 body{
-     
-  
-    background-repeat: no-repeat;
-    background-color: hsl(185,75%,39%) ;
+    background-color: #19A1AE;
     display: flex;
    justify-content: center;
    align-items: center;
-   font-family:'Kumbh Sans';
-   overflow-x: hidden;
-   overflow-y: hidden;
-   
+   background-image: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+    
+    background-repeat: no-repeat;
+    background-position: right 55vw bottom 30vh, left 52vw top 44vh;
+
 }
-.card{
+
+.container{
     width: 350px;
     height:374px;
     border-radius: 15px;
@@ -19,93 +26,62 @@ body{
     box-shadow:0px 50px 100px -20px rgba(8,70,94,0.504835);
 }
 
-.backPicture{
-    max-width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    position: relative;
+.backpicture{
+    border-radius: 15px 15px 0px 0px; ;
 }
 
-.profileImg{
+.profile{
     width:90px;
     height: 90px;
-    position: absolute;
-    transform: translateX(-50%);
-    top: 33%;
-    left: 50%;
-    border-radius:100vw;
     border: 5px solid white;
-    overflow: hidden;
+    border-radius: 50%;
+    margin-left:  calc(50% - 96px/2);
+    margin-top: -40px;
 }
 
-.cardBody{
+.name{
+    line-height: 22px;
+    color:#2E3349;
+    font-size: 18px;
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 45px;
-    
-}
-.name{
-    font-size: 18px;
+    margin-top: 5px;
     font-weight: 700;
-    line-height: 22px;
-    color:#2E3349;
 }
 
 .age{
     color:#6B7082;
-    font-weight: 400;
+    font-weight: 200px;
     padding-left: 5px;
+    font-weight: 400;
 }
 
 .city{
-    font-weight: 400;
     font-size: 14px;
+    line-height: 17px;
+    margin-top: 13px;
+    margin-left: calc(50% - 49.34px/2);
     color:#6B7082;
-    justify-content: center;
-    align-items: center;
+}
+
+.activity{
     display: flex;
-    transform: translateY(-30%);
-    
-    
-    
+    justify-content: space-evenly;
+    text-align: center;
+    color:#2E3349;
+    height:18px;
+    font-weight: 700;
+    border-top: 1px solid #E8E9EC;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .act{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 10px;
     line-height: 18px;
     letter-spacing: 1.5px;
     color:#6B7082;
     display: block;
-    
-    
-}
-
-.activity{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding-right: 55px;
-    padding-left: 55px;
-    color:#2E3349;
-    height:18px;
-    font-weight: 700;
-    border-top: 1px solid #E8E9EC;
-}
-
-.bg-top{
-    position: absolute;
-    top:-90%;
-    left:-30%;
-    z-index: -1;
-    
-}
-
-.bg-bottom{
-    position: absolute;
-    bottom:-90%;
-    right:-40%;
-    z-index: -1;
-    
 }
