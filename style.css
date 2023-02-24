@@ -12,7 +12,7 @@ body{
    justify-content: center;
    align-items: center;
    background-image: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
-    
+    height:100vh;
     background-repeat: no-repeat;
     background-position: right 55vw bottom 30vh, left 52vw top 44vh;
 
